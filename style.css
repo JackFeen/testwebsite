@@ -306,10 +306,10 @@ a { color: inherit; text-decoration: none; }
 
 .hero-img-wrap {
     position: relative;
-    width: 150px; height: 150px;
+    width: 200px; height: 200px;
 }
 .hero-headshot {
-    width: 150px; height: 150px;
+    width: 200px; height: 200px;
     border-radius: 50%;
     object-fit: cover;
     position: relative;
