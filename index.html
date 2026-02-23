@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jack Feen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#top" class="navbar-brand">Jack Feen</a>
+        <div class="navbar-links">
+            <a href="#projects" class="navbar-link">Projects</a>
+            <a href="#myjourney" class="navbar-link">Journey</a>
+            <a href="https://jackfeen.github.io/resume/" target="_blank" class="navbar-link">Resume</a>
+            <a href="/cdn-cgi/l/email-protection#4b212a28202d2e2e253828232424270b2c262a222765282426" class="navbar-link">Contact</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="toggle-track">
+                    <span class="toggle-thumb"></span>
+                </span>
+                <span class="toggle-label" id="themeLabel">☀️</span>
+            </button>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#myjourney" class="mobile-link">Journey</a>
+        <a href="https://jackfeen.github.io/resume/" target="_blank" class="mobile-link">Resume</a>
+        <a href="/cdn-cgi/l/email-protection" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+        <div class="hero-content">
+<div class="hero-img-wrap reveal delay-1">
+                <img src="headshot.jpg" alt="Jack Feen" class="hero-headshot" onerror="this.style.display='none'">
+                <div class="hero-img-ring"></div>
+            </div>
+
+            <h1 class="hero-title reveal delay-2">
+                Hi, I'm <em class="gradient-name">Jack Feen.</em>
+            </h1>
+
+            <p class="hero-sub reveal delay-3">
+                Masters in Business Analytics student at the McCombs School of Business at the University of Texas at Austin — interested in Finance and Data Science.
+            </p>
+
+            <div class="hero-icons reveal delay-4">
+                <a href="https://github.com/JackFeen" target="_blank" class="icon-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/jackafeen/" target="_blank" class="icon-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="/cdn-cgi/l/email-protection" class="icon-link" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                </a>
+            </div>
+
+            <div class="hero-ctas reveal delay-5">
+                <a href="#projects" class="cta-btn primary">View Projects</a>
+                <a href="#myjourney" class="cta-btn secondary">My Journey</a>
+            </div>
+
+            <div class="scroll-indicator reveal delay-6">
+                <div class="scroll-line"></div>
+                <span>scroll</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-wrapper">
+            <div class="section-header reveal">
+                <span class="section-tag">// work</span>
+                <h2 class="section-title">Projects<span class="accent">.</span></h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Featured: Stock Portfolio -->
+                <a href="https://medium.com/@tanyajain.2021/news-sentiment-in-portfolio-optimization-f5fe752c3b89" target="_blank" class="project-card featured reveal">
+                    <div class="card-accent-line"></div>
+                    <div class="card-tags">
+                        <span class="tag finance">Finance</span>
+                        <span class="tag ml">Machine Learning</span>
+                        <span class="tag data">NLP</span>
+                    </div>
+                    <h3 class="card-title">Stock Portfolio Optimization With News Sentiment</h3>
+                    <ul class="card-bullets">
+                        <li><strong>Developed a classifier</strong> using market and news signals to predict superior returns between sentiment-based and minimum variance optimized portfolio weighting strategies</li>
+                        <li><strong>Beat traditional Mean Variance Optimization</strong> returns by 12% while decreasing volatility by 10% (Sharpe 0.95)</li>
+                        <li><strong>Built a data pipeline</strong> in Python with Pandas, NumPy, and VADER NLP which processed 1.4M news articles and 13M+ CRSP returns records covering 6,000+ equities</li>
+                    </ul>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- Connect 4 AI -->
+                <a href="https://msba25optim2-32.anvil.app/" target="_blank" class="project-card featured reveal delay-1">
+                    <div class="card-accent-line"></div>
+                    <div class="card-tags">
+                        <span class="tag ml">Machine Learning</span>
+                        <span class="tag ml">AI</span>
+                        <span class="tag data">Full-Stack</span>
+                    </div>
+                    <h3 class="card-title">Connect 4 AI: Transformer & Convolutional Neural Network</h3>
+                    <ul class="card-bullets">
+                        <li><strong>Sign in</strong> Username: "a", no password</li>
+                        <li><strong>Generated a large-scale game database</strong> using Monte Carlo Tree Search (MCTS) to simulate high-quality gameplay</li>
+                        <li><strong>Trained a Transformer and CNN</strong> to predict optimal moves from board states, evaluated against MCTS at varying simulation strengths</li>
+                        <li><strong>Built and deployed a full-stack web app</strong> in Anvil with a Dockerized backend hosted on AWS Lightsail</li>
+                    </ul>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- R&D Intensity -->
+                <a href="https://jackfeen.github.io/emperical-finance-rd/" target="_blank" class="project-card featured reveal delay-2">
+                    <div class="card-accent-line"></div>
+                    <div class="card-tags">
+                        <span class="tag finance">Finance</span>
+                        <span class="tag data">Quantitative Research</span>
+                    </div>
+                    <h3 class="card-title">R&D Intensity Factor: Quantitative Equity Strategy Analysis</h3>
+                    <ul class="card-bullets">
+                        <li><strong>Engineered a 5-year decay-weighted R&D/ME signal</strong> capturing persistent innovation effects, tested across 43 years of CRSP/Compustat data (1980–2022)</li>
+                        <li><strong>Constructed quintile-sorted long-short portfolios</strong> with annual July rebalancing, risk-adjusted via CAPM and Fama-French 3-factor models</li>
+                        <li>High R&D firms (Q5) generated <strong>+2.02%/month FF3 alpha (t=6.08)</strong> in 1980–2000; alpha decayed 62% post-2000</li>
+                    </ul>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- impactEarth -->
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7292627869610975232" target="_blank" class="project-card reveal">
+                    <div class="card-accent-line"></div>
+                    <div class="card-tags">
+                        <span class="tag biz">Entrepreneurship</span>
+                        <span class="tag biz">Leadership</span>
+                    </div>
+                    <h3 class="card-title">impactEarth: Sustainability Entrepreneurship Competition</h3>
+                    <ul class="card-bullets">
+                        <li>Started <strong>The University of Texas at Dallas's first</strong> sustainability focused entrepreneurship competition</li>
+                        <li>Secured judges, mentors, and over <strong>$5,000 in prize winnings</strong></li>
+                    </ul>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- Snowflake ETL -->
+                <a href="https://github.com/julianlu03/Steam-Snowflake-Analytics" target="_blank" class="project-card reveal delay-1">
+                    <div class="card-accent-line"></div>
+                    <div class="card-tags">
+                        <span class="tag data">Data Engineering</span>
+                        <span class="tag ml">AI</span>
+                    </div>
+                    <h3 class="card-title">Snowflake ETL Pipeline for Steam Games</h3>
+                    <ul class="card-bullets">
+                        <li>Built a <strong>3 layer structure</strong> transforming semistructured data to aggregated dashboards</li>
+                        <li>Built in <strong>AI querying functionality</strong> with Snowflake Cortex</li>
+                    </ul>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- Juris Law -->
+                <a href="https://github.com/JackFeen/Portfolio/blob/main/Zimbabwe_Consulting/EquipMozambique.pdf" target="_blank" class="project-card reveal delay-2">
+                    <div class="card-accent-line"></div>
+                    <div class="card-tags">
+                        <span class="tag biz">Consulting</span>
+                        <span class="tag finance">Finance</span>
+                    </div>
+                    <h3 class="card-title">Juris Law and Rights App: International Market Entry & Financial Consulting</h3>
+                    <ul class="card-bullets">
+                        <li>Developed a scalable non-profit business model for a Mozambican legal rights app, projecting <strong>$200k in yearly cash flows</strong></li>
+                        <li>Built a <strong>Zimbabwe market entry strategy</strong>, comparing legal frameworks and analyzing effective marketing initiatives</li>
+                    </ul>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- Dwelling -->
+                <a href="https://github.com/JackFeen/Portfolio/blob/main/Apartment_Reccomendation/Dwelling%20-%20Unstructured%20Data%20Project.pdf" target="_blank" class="project-card reveal delay-1">
+                    <div class="card-accent-line"></div>
+                    <div class="card-tags">
+                        <span class="tag ml">Machine Learning</span>
+                        <span class="tag data">Data Engineering</span>
+                        <span class="tag data">NLP</span>
+                    </div>
+                    <h3 class="card-title">Dwelling: Apartment Recommendations with Unstructured Data Insights</h3>
+                    <ul class="card-bullets">
+                        <li>Generated <strong>dynamic apartment recommendations</strong> by allowing users to input desired neighborhood features</li>
+                        <li>Web scraped apartments.com and reddit to create a database of local Austin apartments and neighborhood sentiments</li>
+                        <li>Used <strong>Google Maps API</strong> calls with cosine similarity and weighted distance scoring to rank apartments</li>
+                    </ul>
+                    <div class="card-arrow">→</div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey-section" id="myjourney">
+        <div class="section-wrapper">
+            <div class="section-header reveal">
+                <span class="section-tag">// timeline</span>
+                <h2 class="section-title">My Journey<span class="accent">.</span></h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-group reveal">
+                    <div class="timeline-season">Spring 2026</div>
+                    <div class="timeline-items">
+                        <div class="timeline-item education">
+                            <div class="tl-dot"></div>
+                            <div class="tl-content">
+                                <span class="tl-badge education">Education</span>
+                                <div class="tl-date">Graduating Spring 2026</div>
+                                <div class="tl-title">M.S. in Business Analytics, Financial Analytics</div>
+                                <div class="tl-org">UT Austin</div>
+                            </div>
+                        </div>
+                        <div class="timeline-item work">
+                            <div class="tl-dot"></div>
+                            <a href="https://www.linkedin.com/company/viseinc/" target="_blank" class="tl-content">
+                                <span class="tl-badge internship">Capstone</span>
+                                <div class="tl-date">Spring 2026</div>
+                                <div class="tl-title">Investment Strategy Researcher</div>
+                                <div class="tl-org">Vise AI</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-group reveal delay-1">
+                    <div class="timeline-season">Fall 2025</div>
+                    <div class="timeline-items">
+                        <div class="timeline-item education">
+                            <div class="tl-dot"></div>
+                            <div class="tl-content">
+                                <span class="tl-badge education">Education</span>
+                                <div class="tl-date">Started Fall 2025</div>
+                                <div class="tl-title">M.S. in Business Analytics, Financial Analytics</div>
+                                <div class="tl-org">UT Austin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-group reveal delay-2">
+                    <div class="timeline-season">Summer 2025</div>
+                    <div class="timeline-items">
+                        <div class="timeline-item work">
+                            <div class="tl-dot"></div>
+                            <a href="https://www.linkedin.com/company/essilorluxottica/" target="_blank" class="tl-content">
+                                <span class="tl-badge internship">Internship</span>
+                                <div class="tl-date">Summer 2025</div>
+                                <div class="tl-title">Business Analyst Intern</div>
+                                <div class="tl-org">EssilorLuxottica</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-group reveal">
+                    <div class="timeline-season">Spring 2025</div>
+                    <div class="timeline-items">
+                        <div class="timeline-item education">
+                            <div class="tl-dot"></div>
+                            <div class="tl-content">
+                                <span class="tl-badge education">Education</span>
+                                <div class="tl-date">Graduated Spring 2025</div>
+                                <div class="tl-title">B.S. in Business Analytics & Artificial Intelligence</div>
+                                <div class="tl-org">UT Dallas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-group reveal delay-1">
+                    <div class="timeline-season">Summer 2024</div>
+                    <div class="timeline-items">
+                        <div class="timeline-item leadership">
+                            <div class="tl-dot"></div>
+                            <a href="https://www.linkedin.com/company/ssbutd/" target="_blank" class="tl-content">
+                                <span class="tl-badge leadership">Leadership</span>
+                                <div class="tl-date">Summer 2024 → Spring 2025</div>
+                                <div class="tl-title">President</div>
+                                <div class="tl-org">Society of Sustainable Business</div>
+                            </a>
+                        </div>
+                        <div class="timeline-item work">
+                            <div class="tl-dot"></div>
+                            <a href="https://www.linkedin.com/company/lennox/" target="_blank" class="tl-content">
+                                <span class="tl-badge internship">Internship</span>
+                                <div class="tl-date">Summer 2024</div>
+                                <div class="tl-title">Ecommerce Analyst Intern</div>
+                                <div class="tl-org">Lennox International</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-group reveal delay-2">
+                    <div class="timeline-season">Fall 2023</div>
+                    <div class="timeline-items">
+                        <div class="timeline-item leadership">
+                            <div class="tl-dot"></div>
+                            <a href="https://www.linkedin.com/company/ssbutd/" target="_blank" class="tl-content">
+                                <span class="tl-badge leadership">Leadership</span>
+                                <div class="tl-date">Fall 2023</div>
+                                <div class="tl-title">Marketing Manager</div>
+                                <div class="tl-org">Society of Sustainable Business</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-group reveal">
+                    <div class="timeline-season">Fall 2022</div>
+                    <div class="timeline-items">
+                        <div class="timeline-item education">
+                            <div class="tl-dot"></div>
+                            <div class="tl-content">
+                                <span class="tl-badge education">Education</span>
+                                <div class="tl-date">Started Fall 2022</div>
+                                <div class="tl-title">B.S. in Business Analytics & Artificial Intelligence</div>
+                                <div class="tl-org">UT Dallas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-name">Jack Feen</span>
+            <span class="footer-copy">© 2026 — Built with care</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
