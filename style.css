@@ -306,7 +306,7 @@ a { color: inherit; text-decoration: none; }
 
 .hero-img-wrap {
     position: relative;
-    width: 110px; height: 110px;
+    width: 200px; height: 200px;
 }
 .hero-headshot {
     width: 200px; height: 200px;
