@@ -309,7 +309,7 @@ a { color: inherit; text-decoration: none; }
     width: 110px; height: 110px;
 }
 .hero-headshot {
-    width: 110px; height: 110px;
+    width: 200px; height: 200px;
     border-radius: 50%;
     object-fit: cover;
     position: relative;
